@@ -1,0 +1,18 @@
+
+.flex-bg-container{
+  background-image: url(./jovyn-chamb-iWMfiInivp4-unsplash.jpg);
+  height: 100vh;
+  background-size: cover;
+  
+}
+.heading{
+  font-size: 25px;
+  font-weight: bold;
+  padding: 20px;
+  text-align: center;
+
+}
+.card-container{
+  border-radius: 11px;
+}
+  

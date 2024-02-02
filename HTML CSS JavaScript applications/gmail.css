@@ -1,0 +1,23 @@
+.nav-link{
+    color: blue !important;
+    font-weight: 500 !important;
+}
+.create-account{
+color: white !important;
+border: 1px;
+border-radius: 8px;
+width: 150px;
+}
+.sign-in {
+    background-color: white; 
+    border: 1px solid rgb(152, 142, 142); 
+    color: #007bff; 
+    border-radius: 5px; 
+    padding: 7px 10px !important;
+}
+.navbar{
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    }
+    .navbar-brand{
+        font-family:  "Google Sans","Roboto",Arial,sans-serif;
+    }

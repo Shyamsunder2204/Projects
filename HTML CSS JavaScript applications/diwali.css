@@ -1,0 +1,35 @@
+.diwali-container{
+    background-image: url(https://media.istockphoto.com/id/1613539062/video/4k-burning-floral-diya-on-diwali-holiday-hindu-festival-of-lights-happy-deepavali-diwali.jpg?s=640x640&k=20&c=OXJNhL1cm2EfZW8qNfwwq4MzmFSRsfCkUNqbL-igqfU=);
+    height: 40vh;
+    background-size: cover;
+}
+.diwali-heading{
+    font-family: "caveat";
+    font-size: 35px;
+    color: white;
+    font-style: italic;
+    padding: 40px;
+    text-align: center;
+
+} 
+.diwali-bottom{
+    background-color: #e6f6ff;
+    height:50vh;
+    background-size: cover;
+}
+.diwali-item-card{
+    border-radius: 30px;
+    background-color: white;
+    margin: 50px;
+    padding: 40px;
+}
+.diwali-name{
+    margin: 5px;
+    font-size: 20px;
+    text-align: center;
+    color:#616e7c;
+}
+.diwali-price{
+text-align: center;
+font-weight: bold;
+}
