@@ -1,0 +1,12 @@
+.listItems{
+  list-style-type: none;
+}
+/* h5{
+  width: 100px !important;
+} */
+.btn{
+  width: 70px !important;
+}
+.login-container{
+  width: 40% !important;
+}
