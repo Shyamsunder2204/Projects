@@ -1,0 +1,33 @@
+header{
+    background-color: yellow;
+}
+img{
+    width: 100px;
+    height: 60px;
+    padding: 20px;
+}
+nav{
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+    border: 50px;
+    font-size: 30px;
+}
+a{
+    color: white;
+    margin: 20px;
+}
+footer{
+    background-color: yellow;
+}
+.text1{
+background-image: url(../PET/download.jpg);
+padding: 10px;
+font-size: 30px;
+}
+.text2{
+    border:solid 2px black;
+    font-size: 30px;
+    background-color: cyan;
+    
+}

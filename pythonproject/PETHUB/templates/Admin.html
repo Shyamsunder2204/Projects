@@ -1,0 +1,81 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/boostrap.min.css' %}">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">PETCARE</a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Toggle navigation"></button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="{% url 'home'%}">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'about'%}">about</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">modules</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                        <a class="dropdown-item" href="">user</a>
+                        <a class="dropdown-item" href="{% url 'Admin'%}">admin</a>
+                        <a class="dropdown-item" href="{% url 'Manager'%}">manager</a>
+        
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'contact'%}">contact</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'login'%}">login</a>
+                </li>
+               <li class="nav-item">
+                <a class="nav-link" href="{% url 'registration'%}">registration</a>
+            </li>
+                
+            </ul>
+           
+        </div>
+    </nav>
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <h1 class="display-3" style="text-align:center">Admin</h1>
+    </div>
+</div>
+<div class="container">
+    <p>In this project, we would like to discuss about pet care. The main objective of this project is to provide a strong knowledge, about pets and how they are to be treated. Generally, most of the people are unaware about the pet care, Hygienic, medication. Depending on the Breed, Symptoms, Behavior, Food and Age. There are different kind of Diseases, Infections are prone to happen due to their environmental conditions. So the pet owners have no proper knowledge on how to the provide basic amenities to the pets in their pet living areas etc… (depending on the given information we will generate proper and accurate information with the help of the Pet experts.)
+        In this project we will provide necessary information of caring pet which will be provided 
+        </p>
+</div><br>
+<div class="he" style="text-align:center"><h2>Usecase Diagram</h2></div>
+<div class="row" style="text-align:center">
+    <div class="col-6">
+<img src="{% static 'Image\usecase.png' %}" width="70%" height="190px">
+    </div>
+    <div class="col-6" style="padding: 30px;">
+        A use case diagram is a graphical depiction of a user's possible interactions with a system. A use case diagram shows various use cases and different types of users the system has and will often be accompanied by other types of diagrams as well. The use cases are represented by either circles or
+    </div>
+</div>
+<div class="h2" style="text-align:center"><h2>Activity Diagram</h2></div>
+<div class="row" style="text-align:center">
+    <div class="col-6">
+        <p>Activity diagrams are graphical representations of workflows of stepwise activities and actions[1] with support for choice, iteration and concurrency. In the Unified Modeling Language, activity diagrams are intended to model both computational and organizational processes (i.e., workflows), as well as the data flows intersecting with the related activities.[2][3] Although activity diagrams primarily show the overall flow of control, they can also include elements showing the flow of data between activities through one or more data stores.[citation needed]
+</p>
+    </div>
+    <div class="col-6">
+<img src="../PET/download.png" width="70%" height="150px">
+    </div>
+</div>
+</body><br>
+<footer>website Designed By:
+    <p><b>SHYAMSUNDER</b></p>
+</footer>
+</html>

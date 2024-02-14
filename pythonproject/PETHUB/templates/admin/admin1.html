@@ -1,0 +1,58 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/boostrap.min.css' %}">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">PETCARE</a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Toggle navigation"></button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="../home.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modelId">
+                  Logout
+                </button>
+                
+                            </ul>
+           
+        </div>
+    </nav>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container" style="text-align:center">
+            <h1 class="display-3">Admin</h1>
+        </div>
+    </div><br>
+<div class="row" style="text-align:center">
+    <div class="col-4">
+        <a class="btn btn-primary btn-lg" href="../Admin/profile.html"> Profile </a>
+    </div>
+<div class="col-4">
+    <a class="btn btn-primary btn-lg" href="../Admin/datalist.html"> Data List </a>
+</div>
+<div class="col-4">
+    <a class="btn btn-primary btn-lg" href="../Admin/expert.html"> Expert </a>
+</div>
+</div><br><br><br><br>
+<div class="row" style="text-align:center">
+    <div class="col-4">
+        <a class="btn btn-primary btn-lg" href="../Admin/feedback.html"> Feedback </a>
+    </div>
+    <div class="col-4">
+        <a class="btn btn-primary btn-lg" href="../Admin/notifications.html"> Notifications </a>
+    </div>
+    <div class="col-4">
+        <a class="btn btn-primary btn-lg" href="../Admin/Addservices.html"> Addservices </a>
+    </div>
+</div>
+</body>
+</html>

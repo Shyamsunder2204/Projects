@@ -1,0 +1,214 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <!-- <link rel="stylesheet" href="{% static 'css/boostrap.min.css' %}"> -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        .adminButton {
+            border: none;
+            background-color: #4caf50;
+            color: white;
+            font-weight: 500;
+            border-radius: 8px;
+            padding: 10px;
+            width: 100px;
+            margin-left: 10px;
+        }
+
+        .navbar {
+            background-color: #00498D !important;
+            height: 50px !important;
+        }
+
+        .nav-item a {
+            color: white !important;
+        }
+
+        nav a:hover {
+            background-color: rgb(17, 206, 54);
+            transition: 0.5s;
+            text-transform: uppercase;
+            width: auto;
+        }
+        nav a{
+            width: 100px;
+            display: block;
+            padding: 20px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        .dropdown-item{
+            color:black
+        }
+        footer {
+         background-color: #333;
+         color: #fff;
+         padding: 20px 0;
+        }
+.container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 160px;
+}
+.footer-section {
+  flex: 1;
+}
+/* Style for navigation links */
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.social-icons {
+  font-size: 20px;
+}
+
+.social-icons a {
+  color: #fff;
+  margin-right: 10px;
+}
+</style>
+</style>
+</head>
+
+<body>
+    <header style="margin-left: 50px; padding:20px;">
+        <div class="d-flex">
+            <div class="pethub pt-1 ">
+                <img src="{% static 'image/download.png' %}" height="30px" weight="30px">
+             </div>
+             <div>
+                 <h2>Pethub</h2>
+             </div>
+
+        </div>
+    </header>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-primary p-0 ">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation"></button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about">about</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">modules</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                        <a class="dropdown-item" href="userinfo">user</a>
+                        <a class="dropdown-item" href="{% url 'Admin' %}">admin</a>
+                        <a class="dropdown-item" href="{% url 'Manager' %}">manager</a>
+
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'contact' %}">contact</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'login' %}">login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'registration' %}">registration</a>
+                </li>
+
+            </ul>
+
+        </div>
+    </nav>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-3" ><b>Home</b></h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-4 text-center">
+            <a href="admin1"><button class="adminButton">Admin</button></a>
+        </div>
+        <div class="col-4 text-center">
+            <a href="user1"><button class="adminButton">User</button></a>
+        </div>
+        <div class="col-4 text-center">
+            <a href="{% url 'manager1'%}"><button class="adminButton">Manager</button></a>
+        </div>
+    </div><br>
+    <div class="row">
+        <div class="col-6 ps-2">
+            <p style="text-align: justify;padding-left: 20px; padding-top: 10px;">In proposed system we are providing an
+                online portal.
+                The main objective of a pet care application is to provide essential information about the pet animals
+                in virtual way. The pet owner can easily access the information about the pet animals through this
+                application. It is an easy way as the pet owner can check the information in seconds by using this
+                application. It reduces the cost and efforts of the pet owner as they do not need to visit pet care
+                center. we can gain more relevant information by browsing the application rather than visiting the pet
+                center.
+            </p>
+        </div>
+        <div class="col-6">
+            <img src="{% static 'image/groups-business-brainstorm-ideas-plan-260nw-1699425754.webp' %}">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6 " >
+            <img src="{% static 'image/Software-requirement.jpg' %}" width="90%" height="200px">
+        </div>
+        <div class="col-6">
+            <p style="text-align: justify; padding-right: 20px;"> In existing system, pet care system all the procedures are done manually,
+                the main drawback of system is time consuming. If we need any information about the pet, we need to
+                visit the pet care center as we are unaware of their pet needs. If the pet is suffering from any disease
+                or it is unwell, we need to visit the pet hospital. we will feed the food to the pet which might harm
+                the pet as we are unaware of their food habits. It is slightly expensive to visit the pet care center
+                every time. To overcome the above problems, we need an online application which solves all the queries
+                about the pet.</p> </div>
+        </div>
+
+</body><br><br>
+    <footer>
+        <div class="container">
+          <div class="footer-section">
+            <h3>Quick Links</h3>
+            <div class="footer-links">
+            <ul>
+              <li><a href="../my project/home.html">Home</a></li>
+              <li><a href="../my project/about.html">About</a></li>
+              <li><a href="#">Products</a></li>
+              <li><a href="#">Services</a></li>
+            </ul>
+            </div>
+          </div>
+          <div class="footer-section">
+            <h3>Contact Us</h3>
+            <p>Email: sattushyam7@gmail.com</p>
+            <p>Phone: 9885340110</p>
+          </div>
+          <div class="footer-section">
+            <h3>Follow us</h3>
+            <div class="social-icons"> 
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>      
+          </div>
+        </div>
+        <div style="text-align: center;">
+            wedsite designed by@<u>shyamsunder</u>
+          </div>
+      </footer>
+</html>

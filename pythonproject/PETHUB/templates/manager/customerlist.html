@@ -1,0 +1,139 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/boostrap.min.css' %}">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+
+td, th {
+    border: 1px solid #777;
+    padding: 0.5rem;
+    text-align: center;
+}
+ 
+table {
+    border: solid rgb(87, 84, 84);
+}
+ 
+tbody tr:nth-child(odd) {
+    background: #eee;
+}
+  
+    </style>
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-light bg-primary">
+        <a class="navbar-brand" href="#">AuctionPortal</a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="{% url 'home' %}">Home<span class="sr-only">(current)</span></a>
+                </li>
+
+        </div>
+    </nav>
+    <div class="jumbotron">
+        <center><h2>PETCARE</h2></center>
+        </div>
+      <div class="container">
+        <table class="table" style="border;">
+            <thead>
+                <tr>
+                    <th>S.No</th>
+                    <th>Date</th>
+                    <th>Venue</th>
+                    <th>manager</th>
+                    <th>Manager Mobile no</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td scope="row">1.</td>
+                    <td>23-05-2023</td>
+                    <td>Hyderabad</td>
+                    <td>Arun</td>
+                    <td>8186080689</td>
+                    
+                </tr>
+                <tr>
+                    <td scope="row">2.</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+
+                </tr>
+                <tr>
+                    <td scope="row">3.</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+
+                </tr>
+                <tr>
+                    <td scope="row">4.</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+
+                </tr>
+                <tr>
+                    <td scope="row">5.</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+
+                </tr>
+                <tr>
+                    <td scope="row">6.</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+
+                </tr>
+                <tr>
+                    <td scope="row">7.</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+
+                </tr>
+                <tr>
+                    <td scope="row">8.</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+
+                </tr>
+            </tbody>
+        </table>
+      </div>
+      
+    
+</body><br><br>
+<footer style="text-align:center">
+    <p>Website Designed By: </p>
+    <b>SHYAMSUNDER</b>
+    <p>mobile no:773646388737</p>
+    shymsunder234@gmail.com
+</footer>
+</html>

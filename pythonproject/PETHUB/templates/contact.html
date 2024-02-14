@@ -1,0 +1,214 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/boostrap.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        .navbar {
+            background-color: #00498D !important;
+            height: 50px !important;
+        }
+
+        .nav-item a {
+            color: white !important;
+        }
+
+        nav a:hover {
+            background-color: rgb(17, 206, 54);
+            transition: 0.5s;
+            text-transform: uppercase;
+        }
+        nav a{
+            width: 100px;
+            display: block;
+            padding: 20px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        .footer{
+            background-color: #24262b;
+            margin: 0;
+            padding: 50px 0;
+            box-sizing: border-box;
+        }
+        ul{
+            list-style: none;
+        }
+        .container{
+            max-width: 1170px;
+            margin: auto;
+        }
+        .footer-col{
+            width:25%;
+            padding:0 15px;
+            color: white;
+            margin-left: 30px;
+        }
+    </style> 
+</head>
+<body>
+    <header style="margin-left: 50px; padding:20px;">
+        <div class="d-flex">
+            <div class="pethub pt-1 ">
+                <img src="{% static 'image/download.png' %}" height="30px" weight="30px">
+             </div>
+             <div>
+                 <h2>Pethub</h2>
+             </div>
+
+        </div>
+    </header>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Toggle navigation"></button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="{% url 'home' %}">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'about' %}">about</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">modules</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                        <a class="dropdown-item" href="{% url 'User' %}">user</a>
+                        <a class="dropdown-item" href="{% url 'Admin' %}">admin</a>
+                        <a class="dropdown-item" href="{% url 'Manager' %}">manager</a>
+        
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">contact</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'login' %}">login</a>
+                </li>
+               <li class="nav-item">
+                <a class="nav-link" href="{% url 'registration' %}">registration</a>
+            </li>
+                
+            </ul>
+           
+        </div>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modelId">
+             Logout
+            </button>
+            
+            <!-- Modal -->
+            <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Logout</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                        </div>
+                        <div class="modal-body">
+                            Are you sure want to logout?
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">no</button>
+                            <button type="button" class="btn btn-primary">Yes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+  
+  
+  
+            </form>
+        </div>
+    </nav>
+
+  <div class="jumbotron" style="text-align: center;">
+  <h1 class="display-3">Contact</h1>
+  </div>
+ 
+<div class="row">
+    <div class="col-1">
+    </div>
+
+<div class="col-4">
+    <form action="/contact" method="POST">
+    {% csrf_token%}
+    <div class="form-group">
+        <div style="text-align: center;"><label><b><u>Contact Form:</u></b></label></div>
+      <label for="">Name:</label>
+      <input type="text" name="" id="" class="form-control" placeholder="" aria-describedby="helpId">
+    </div>
+    </form>
+    <div class="form-group">
+      <label for="">Email</label>
+      <input type="text" name="" id="" class="form-control" placeholder="" aria-describedby="helpId">
+      
+    </div>
+    <div class="form-group">
+      <label for="">Mobile no</label>
+      <input type="text" name="" id="" class="form-control" placeholder="" aria-describedby="helpId">
+      
+    </div>
+    <div style="text-align:center;"><input type="submit"></div>
+</div>
+<div class="col-1">
+
+</div>
+    
+<div class="col-6">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.3897389432764!2d78.52735221467071!3d17.393074188075197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb990504a28b7d%3A0x2bfa2aa2c717879f!2sAurora&#39;s%20PG%20College!5e0!3m2!1sen!2sin!4v1673757802474!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+ </div>
+  <br>
+</div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+            <div class="footer-col">
+              <h4>Quick Links</h4>
+              <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Products</li>
+                <li>Services</li>
+              </ul>
+              </div>
+            <div class="footer-col">
+              <h4>Contact Us</h4>
+              <ul>
+              <li>Email:sattushyam7@gmail.com</li>
+              <li>Phone:9885340110</li>
+              <li>Hyderabad</li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Follow us</h4> 
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </div>      
+            </div>
+            <p style="color: azure; text-align: center;">Website designed by@<u>Shyamsunder</u></p>
+          </div>
+        </footer>
+    
+</P>
+</b>
+</div>
+</body>
+</footer>
+
+
+
+
+<style>
+   
+</style>
+</body>
+</html>

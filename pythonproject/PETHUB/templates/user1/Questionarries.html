@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/boostrap.min.css' %}">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+  
+    </style>
+</head>
+<body>
+    <h1>PetHub Questionnaire  </h1><br>
+    <p style="color:green;">{{result}}</P>
+    <p>Please answer the following questions:</p>
+    
+    <form action="{% url 'Questionarries' %}" method="POST">
+     {% csrf_token %}
+        <label for="name">1. Your Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label>2. What type of pet do you have?</label><br>
+        <input type="text" id="" name="typepet" value=""><br><br>
+        
+
+        <label for="pet_name">3. Pet's Name:</label>
+        <input type="text" id="pet_name" name="pet_name" required><br><br>
+
+        <label for="comments">4. Any questions would you like to ask:</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
