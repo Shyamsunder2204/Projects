@@ -1,0 +1,79 @@
+
+.heading{
+    background-color:#5E008C;
+    color: white;
+    padding:20px;
+    margin-top:10px;
+}
+.navbar-light .navbar-nav .nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-brand,
+.navbar-light .navbar-text {
+  color: white;
+}
+
+
+.navbar-light .navbar-text {
+  color: white;
+}
+.hrms{
+  margin:0px 0px 20px;
+  font-weight: bold;
+}
+p{
+  margin:0px 0px 10px;
+  font-size: 18px;
+}
+.nav-link {
+  color:black !important;
+}
+.hrms-heading{
+  margin: 70px 100px 30px 100px !important;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  color:white
+}
+
+.col-4{
+  margin-left: 60px !important;
+  
+} 
+.box {
+  border: 1px solid #ccc; 
+  padding: 20px; 
+  border-radius: 8px; 
+  background-color: #f5f5f5; 
+  text-align: center; 
+  margin: 10px; 
+}
+.navbar{
+  padding:5px;
+}
+.offcanvas {
+  width: 250px; /* Adjust the width as needed */
+}
+.error{
+  color:red;
+}
+.success{
+  color:green;
+}
+.employee:hover{
+  color:grey !important;
+}
+.employee-table {
+  border-collapse: collapse;
+  width: 70%;
+  margin: 15px;
+}
+
+.employee-table th,
+.employee-table td {
+  border: 1px solid #000;
+  padding: 8px;
+  text-align: center;
+}
+.input-field{
+  margin: 10px 0px 2px 20px;
+}
